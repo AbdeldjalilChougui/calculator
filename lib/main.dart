@@ -63,10 +63,13 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              Text(
-                widget.tapedValue,
-                maxLines: 2,
-                style: TextStyle(fontSize: 50),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: Text(
+                  widget.tapedValue,
+                  maxLines: 2,
+                  style: TextStyle(fontSize: 50),
+                ),
               ),
               Center(
                 child: Column(
